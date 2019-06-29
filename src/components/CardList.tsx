@@ -1,20 +1,21 @@
 import * as React from 'react';
 import Card from './Card';
+import  { IRobot } from '../containers/App';
+ 
+// export interface IRobot {
+//   name: string;
+//   id: number;
+//   email: string;
+// }
 
-export interface IRobot {
-  name: string;
-  id: number;
-  email: string;
-}
-
-type CardListProps = {
-  robots: Array<IRobot>;
+// type CardListProps = {
+//   robots: Array<IRobot>;
   
- }
+//  }
 
 
 
-const CardList = ({ robots }:CardListProps) => {
+const CardList = ({ robots }:{robots: Array<IRobot>}) => {
   return (
     <div>
       {

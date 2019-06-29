@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 type ScrollProps = {
-children: React.ReactNode
+children?: JSX.Element
 }
 
  const Scroll = (props:ScrollProps) => {
