@@ -1,9 +1,10 @@
 import * as React from 'react';
 
-type scrollProps = {
-children: any
+type ScrollProps = {
+children: React.ReactNode
 }
-const Scroll = (props:scrollProps) => {
+
+ const Scroll = (props:ScrollProps) => {
   return (
     <div style={{ overflow: 'scroll', border: '5px solid black', height: '800px'}}>
       {props.children}
